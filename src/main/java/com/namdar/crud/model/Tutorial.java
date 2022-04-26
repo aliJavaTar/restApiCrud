@@ -30,4 +30,14 @@ public class Tutorial {
     private String description;
     @Column(name = PUBLISHED)
     private boolean published;
+
+    @Override
+    public String toString() {
+        return "Tutorial{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", published=" + published +
+                '}';
+    }
 }
